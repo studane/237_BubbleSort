@@ -19,7 +19,7 @@ void input()
             cout << "\nArray dapat mempunyai maksimal 20 elemen. \n"; // Output ke layar
         }
     }
-    cout << end1;
+    cout << endl;
     cout << "===================" << endl;
     cout << "Masukkan Elemen Array" << endl;
     cout << "===================" << endl;
@@ -50,5 +50,24 @@ void bubbleSortArray()
         pass += 1; // step 4
 
         cout << "\nPass " << pass - 1 << ": "; // Number of pass
-    } 
+        for (int k = 0; k < n; k++)
+        {
+            cout << arr[k] << " "; // Menampilkan data pada number of pass
+        }
+        cout << endl;
+
+    }   while (pass <= n - 1); //step 5
+}
+
+void display()
+{
+    cout << endl;
+    cout << "==================================" << endl;
+    cout << "Element Array yang telah tersusun" << endl;
+    cout << "==================================" << endl;
+    cout << endl;
+    for (int j = 0; j < n; j++)
+    {
+        cout << arr[j]; // menampilkan array
+    }
 }
